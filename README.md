@@ -72,7 +72,7 @@ Visualize your selected outfits with the virtual try-on feature. Upload a photo,
 
 ![SS5](https://github.com/divijakinger/fashionAI/assets/79623853/4975fa54-8b9f-4dc0-8be4-c7dacba2c0a3)
 
-**yau can also ask for more suggestions for mixing and matching different styles**
+**you can also ask for more suggestions for mixing and matching different styles**
 ![SS6](https://github.com/divijakinger/fashionAI/assets/79623853/170715ab-cca7-4170-b42f-7ea2a8e01143)
 ![SS7](https://github.com/divijakinger/fashionAI/assets/79623853/e162d11c-4ec1-4113-aaa0-0f02234419b4)
 
