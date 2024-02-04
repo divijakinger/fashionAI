@@ -81,8 +81,10 @@ Visualize your selected outfits with the virtual try-on feature. Upload a photo,
 ![SS9](https://github.com/divijakinger/fashionAI/assets/79623853/4d99cd73-608e-47a6-9762-9932d4ed4b6b)
 
 **For example, This is Shubh,**
+
 ![shubh-removebg](https://github.com/divijakinger/fashionAI/assets/79623853/985b3cd8-f4ce-43be-829a-ed70e77bab6b)
 **and he is not so sure about the type of clothes that he should wear for an outing with his friends but fret not, your Fashion Companion is here to save the Day!! with just a few clicks and a question to the Fashion expert you can get the best fashion suggestions ever, just like this:-**
+
 ![SS12](https://github.com/divijakinger/fashionAI/assets/79623853/456ad4ac-2fd8-4841-a4d1-d7457694f897)
 
 
