@@ -59,4 +59,31 @@ Visualize your selected outfits with the virtual try-on feature. Upload a photo,
 
 ![Diagram1](https://github.com/divijakinger/fashionAI/assets/79623853/cf752988-0c27-4998-aad5-006c4bc3649c)
 
+## What it looks like:
+**This is the Home screen of the Application**
+![SS1](https://github.com/divijakinger/fashionAI/assets/79623853/ae52c242-c023-4c77-bbdc-a5cbfc2acc2e)
+![SS2](https://github.com/divijakinger/fashionAI/assets/79623853/16dec7fa-ed48-4a1a-9edb-7782e96c74ea)
+
+**If you would like to talk to the Fashion Expert AI you can do so over here**
+![SS3](https://github.com/divijakinger/fashionAI/assets/79623853/3bad0732-d819-46ff-bb12-8a06d49a3f5d)
+
+**Like this**
+![SS4](https://github.com/divijakinger/fashionAI/assets/79623853/b69dab48-ba0b-4d45-9896-75c99e7fb952)
+
+![SS5](https://github.com/divijakinger/fashionAI/assets/79623853/4975fa54-8b9f-4dc0-8be4-c7dacba2c0a3)
+
+**yau can also ask for more suggestions for mixing and matching different styles**
+![SS6](https://github.com/divijakinger/fashionAI/assets/79623853/170715ab-cca7-4170-b42f-7ea2a8e01143)
+![SS7](https://github.com/divijakinger/fashionAI/assets/79623853/e162d11c-4ec1-4113-aaa0-0f02234419b4)
+
+**If you are not sure what kind of colors to choose for your personal tone, Ask the Color Expert who can suggest the palette of colors that look the best with your skin tone**
+![SS10](https://github.com/divijakinger/fashionAI/assets/79623853/b8fc472f-48e6-4bac-ab48-5c9373945d1d)
+![SS9](https://github.com/divijakinger/fashionAI/assets/79623853/4d99cd73-608e-47a6-9762-9932d4ed4b6b)
+
+**For example, This is Shubh,**
+![shubh-removebg](https://github.com/divijakinger/fashionAI/assets/79623853/985b3cd8-f4ce-43be-829a-ed70e77bab6b)
+**and he is not so sure about the type of clothes that he should wear for an outing with his friends but fret not, your Fashion Companion is here to save the Day!! with just a few clicks and a question to the Fashion expert you can get the best fashion suggestions ever, just like this:-**
+![SS12](https://github.com/divijakinger/fashionAI/assets/79623853/456ad4ac-2fd8-4841-a4d1-d7457694f897)
+
+
 OnPoint - Where Fashion Meets Innovation! 🚀✨👗👠
