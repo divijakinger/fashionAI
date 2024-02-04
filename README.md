@@ -45,13 +45,10 @@ Step 3: Creating a VectorDB: A database of all the fashion products are vectoriz
 
 Step 4: Searching the VectorDB: The three type of insights generated in the previous step are combined to generate a query to be used for searching in ChromaDB
 
-![Fashion Assistant](Diagram1.png)
-
-
 Step 5: Processing Insights: Problem : We need to process K-V pairs from insights to form a usable search query for ChromaDB Solution : We combine the K-V pairs from the insights to generate search query & filters for ChromaDB, later converted to embeddings for searching.
-
-
 
 Step 6: Serving user: Problem : Serving the results through Backend Solution : Using Flask-SocketIO to serve ChromaDB search results to the user via a POST request.
 
 Step 7: Incorporating the user requested outfit changes: Problem: Making changes to the outfit according to the user’s changing prompt. Solution: LLM identifies what needs to be changed and based on that VectorDB is searched again.
+
+![Diagram1](https://github.com/divijakinger/fashionAI/assets/79623853/cf752988-0c27-4998-aad5-006c4bc3649c)
