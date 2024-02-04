@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+# OnPoint - Your Ultimate Fashion Companion 👗👠
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+OnPoint is a cutting-edge fashion assistant designed to revolutionize your style game. This project combines advanced technologies to provide users with a seamless and personalized fashion experience.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+### 1. Fashion Outfit Generator 🌟
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Generate complete outfits effortlessly by describing your occasion, age, and location. OnPoint's algorithm curates a complete outfit with footwear and accessories to create the perfect ensemble for any event.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 2. Virtual Stylist 📸💄
 
-### `npm test`
+Take a photo of your favorite clothing piece, and let the virtual stylist suggest complementary items. Receive expert advice on how to mix and match your wardrobe for a stylish look.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 3. Color Palette Generator 🎨🌈
 
-### `npm run build`
+Discover your ideal color palette based on color therapy and facial complexion analysis. OnPoint helps you identify colors that enhance your natural features, ensuring you always look your best.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 4. Virtual Try On 🤳👗
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Visualize your selected outfits with the virtual try-on feature. Upload a photo, specify your desired outfits, and see how they look on you before making any decisions.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Techstack 🖥️
 
-### `npm run eject`
+1. Frontend: React JS
+2. APIs: All connections are done through WebSockets in Flask
+3. Backend: LLMs are implemented using Python
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Getting Started 🚀
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Clone the repository: `git clone https://github.com/yourusername/OnPoint.git`
+2. Install dependencies: `npm install`
+3. Run the application: `npm start`
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## How does it work?
 
-## Learn More
+Step 1: Insights from User Prompt : Problem : Understanding what user wants from the prompt. Solution : User’s prompt is processed to understand the different factors in the user's prompt. Factors such as Age, Location, Ocassion are all considered by the LLM
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Step 2: Insights from Latest Fashion Trends: Problem : Finding & identifying latest trends from social media. Solution : Top trending fashion posts are scrapped from Instagram Fashion Influencers. These pictures are then passed through a Vision Assistance model to describe their outfits and then these descriptions are stored in a csv.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Step 3: Creating a VectorDB: A database of all the fashion products are vectorized for faster and efficient matching and retrieval.
 
-### Code Splitting
+Step 4: Searching the VectorDB: The three type of insights generated in the previous step are combined to generate a query to be used for searching in ChromaDB
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![Fashion Assistant](Diagram1.png)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Step 5: Processing Insights: Problem : We need to process K-V pairs from insights to form a usable search query for ChromaDB Solution : We combine the K-V pairs from the insights to generate search query & filters for ChromaDB, later converted to embeddings for searching.
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+Step 6: Serving user: Problem : Serving the results through Backend Solution : Using Flask-SocketIO to serve ChromaDB search results to the user via a POST request.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Step 7: Incorporating the user requested outfit changes: Problem: Making changes to the outfit according to the user’s changing prompt. Solution: LLM identifies what needs to be changed and based on that VectorDB is searched again.
